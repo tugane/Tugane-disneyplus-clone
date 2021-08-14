@@ -4,7 +4,9 @@ import { auth, provider } from '../firebase';
 import { useHistory } from "react-router";
 import { selectUserName,selectUserEmail,selectUserPhoto, setUserLoginDetails, setSignOutState } from "../features/user/userSlice";
 import { useEffect } from "react";
+
 const Header = (props) =>{
+
     const dispatch = useDispatch()
     const history = useHistory()
     const userName = useSelector(selectUserName);
